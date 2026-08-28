@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Use Me // Midnight Court</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/court.css" />
+</head>
+<body>
+  <div id="age-gate">
+    <h1>18+ // ENTER THE COURT</h1>
+    <p>Adults only. Service, feminization, chastity.</p>
+    <div>
+      <button class="gate-btn enter" type="button" onclick="enterCourt()">I am 18+ — open the doors</button>
+      <button class="gate-btn leave" type="button" onclick="leaveCourt()">I'm out</button>
+    </div>
+  </div>
+  <header>
+    <a class="logo" href="index.html">MIDNIGHT <span>COURT</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="rants.html">Talk Shit</a>
+      <a class="active" href="service.html">Use Me</a>
+      <a href="journey.html">His Journey</a>
+      <a href="gallery.html">Humiliation</a>
+      <a href="challenges.html">Challenge Him</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Use me — free labour and servitude</h1>
+    <p class="lede">Kyle works for women for free. Butler for girls night. Dress him as one of the girls. Cage on for every job.</p>
+    <div class="rule"><strong>Chastity rule.</strong> If he is working for you, he wears a chastity cage for the entire shift. No lock, no shift.</div>
+    <div class="grid-2">
+      <article class="card"><h3>Free work</h3><p>Research, writing, code, admin, errands, clean-up. No invoice.</p></article>
+      <article class="card"><h3>Butler for girls night</h3><p>Staff, not a guest. Cage on under the uniform.</p></article>
+      <article class="card"><h3>Dress him</h3><p>Makeup, wig, dress, heels, name for the night. Make him one of the girls.</p></article>
+      <article class="card"><h3>Servitude</h3><p>Standing orders you invent. Illegal requests ignored.</p></article>
+    </div>
+    <form id="service-form" action="https://formsubmit.co/kyle89roberts@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="MIDNIGHT COURT — work order" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" id="svc-name" name="name" placeholder="Your name / how to address you" required />
+      <input type="text" id="svc-contact" name="contact" placeholder="Contact" />
+      <select id="svc-type" name="type" required>
+        <option value="FREE LABOUR">Free labour / task</option>
+        <option value="BUTLER">Butler for girls night</option>
+        <option value="DRESS-UP">Dress him / make him one of the girls</option>
+        <option value="SERVITUDE">Ongoing servitude</option>
+      </select>
+      <textarea id="svc-task" name="task" placeholder="What do you need?" required></textarea>
+      <label class="meta" style="display:block;margin:.4rem 0 1rem;">
+        <input type="checkbox" id="svc-cage" name="chastity_cage" value="YES — cage required" checked />
+        He must be in a chastity cage for the entire job.
+      </label>
+      <button type="submit" class="submit">Issue the work order</button>
+    </form>
+    <p class="warning">Goes to kyle89roberts@gmail.com. First live submit: click the FormSubmit confirm email.</p>
+    <div id="svc-list"></div>
+  </main>
+  <footer>Project Liquid Midnight · Cage on or no shift</footer>
+  <script src="js/court.js"></script>
+</body>
+</html>
