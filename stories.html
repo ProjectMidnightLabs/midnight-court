@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stories // Midnight Court</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/court.css" />
+</head>
+<body>
+  <div id="age-gate">
+    <h1>18+ // ENTER THE COURT</h1>
+    <p>Adults only.</p>
+    <div>
+      <button class="gate-btn enter" type="button" onclick="enterCourt()">I am 18+ — open the doors</button>
+      <button class="gate-btn leave" type="button" onclick="leaveCourt()">I'm out</button>
+    </div>
+  </div>
+  <header>
+    <a class="logo" href="index.html">MIDNIGHT <span>COURT</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="stories.html">Stories</a>
+      <a href="rants.html">Talk Shit</a>
+      <a href="service.html">Use Me</a>
+      <a href="journey.html">His Journey</a>
+      <a href="gallery.html">Humiliation</a>
+      <a href="challenges.html">Challenge Him</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Empowering stories</h1>
+    <p class="lede">Write the moment you took the room. No softening required.</p>
+    <form id="story-form" action="https://formsubmit.co/kyle89roberts@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="MIDNIGHT COURT — story" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="text" id="story-name" name="alias" placeholder="Name or alias" required />
+      <input type="text" id="story-title" name="title" placeholder="Title" required />
+      <textarea id="story-body" name="story" placeholder="What happened. Who folded. What you took." required></textarea>
+      <button type="submit" class="submit">Etch it into the court</button>
+    </form>
+    <p class="warning">Emails kyle89roberts@gmail.com. Confirm FormSubmit on first send.</p>
+    <h2>The archive</h2>
+    <div id="story-list"></div>
+  </main>
+  <footer>Project Liquid Midnight · <a href="index.html">Home</a></footer>
+  <script src="js/court.js"></script>
+</body>
+</html>
